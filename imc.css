@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: pink;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+#resultat {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    background-color: #ccc;
+    color: #333;
+}
+
+.reset-btn:hover {
+    background-color: #bbb;
+}
+
+/* Barre d'IMC visuelle */
+#imcBarContainer {
+    margin-top: 25px;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to right,
+        #76a4ca 0%,       /* Maigreur */
+        #32d237 25%,      /* Normal */
+        #d88b18 50%,      /* Surpoids */
+        #ec291b 75%,      /* Obésité 1 */
+        #eb071d 100%      /* Obésité 2+ */
+    );
+    border-radius: 17px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+#imcBar {
+    height: 100%;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.648);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#historiqueContainer {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#historique {
+    list-style: none;
+    padding-left: 0;
+}
+
+#historique li {
+    padding: 10px;
+    background: #f4cdcd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
